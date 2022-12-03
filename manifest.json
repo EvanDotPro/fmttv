@@ -1,0 +1,11 @@
+{
+    "name": "FMTTV",
+    "version": "0.0.1",
+    "description": "This currently does one thing: brings back the emote we all know and love. In the future it may do more.",
+    "content_scripts": [{
+        "matches": ["https://www.twitch.tv/*"],
+        "js": ["thirdParty/jquery-3.6.0.js", "thirdParty/arrive-2.4.1.js", "content.js"],
+        "run_at": "document_end"
+    }],
+    "manifest_version": 2
+}
